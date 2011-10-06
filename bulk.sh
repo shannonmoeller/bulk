@@ -45,7 +45,7 @@ com=$(printf ' %q' "$@")
 [[ -n $com ]] && printf '%q\n' ${dir[@]} | while read d; do
 	d="$d/$sub"
 	if [[ -d $d ]]; then
-		printf '\e[0;1;34m./%q\e[32m]\e[33m$%s%b\e[0m' $d $com $eol
+		printf '\e[0;1;34;40m./%q\e[33m>%s%b\e[0m' $d $com $eol
 		printf '%s\n' "$(cd $d && eval $com)"
 	fi
 done
