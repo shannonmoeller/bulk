@@ -51,7 +51,7 @@ com=$(printf " %q" "$@")
 	d="$d/$sub"
 
 	if [[ -d $d ]]; then
-		printf "\e[0;1;34;40m./%q\e[33m>%s%b\e[0m" $d $com $eol
+		printf "\e[0;1;34;40m./%q \e[0;30;103m>\e[0;1;33m%s%b\e[0m" ${d%%/} $com $eol
 		printf "%s\n" "$(cd $d && eval $com)"
 	fi
 done
