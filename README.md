@@ -2,7 +2,7 @@
 
 > Run the same command across several directories.
 
-## Installation
+## Install
 
 ```sh
 export PATH="$PATH:~/bin"
