@@ -2,6 +2,14 @@
 
 > Run the same command across several directories.
 
+# Usage
+
+```
+usage: bulk [command]
+```
+
+# Examples
+
 ```sh
 $ pwd
 /Users/smoeller/example
