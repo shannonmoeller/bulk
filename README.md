@@ -25,11 +25,7 @@ options:
 ## Examples
 
 ```
-$ pwd
-/Users/smoeller/example
-
-$ tree -L 2
-
+/Users/smoeller/example $ tree -L 2
 .
 ├── cake/
 │   ├── .git/
@@ -43,7 +39,7 @@ $ tree -L 2
 
 3 directories, 0 files
 
-$ bulk pwd
+/Users/smoeller/example $ bulk pwd
 ./cake/ > pwd
 /Users/smoeller/example/cake
 ./rainbow/ > pwd
@@ -51,12 +47,12 @@ $ bulk pwd
 ./unicorn/ > pwd
 /Users/smoeller/example/unicorn
 
-$ bulk git config -l | grep url
+/Users/smoeller/example $ bulk git config -l | grep url
 remote.origin.url=git@github.com:smoeller-example/cake.git
 remote.origin.url=git@github.com:smoeller-example/rainbow.git
 remote.origin.url=git@github.com:smoeller-example/unicorn.git
 
-$ bulk -d .git cat HEAD
+/Users/smoeller/example $ bulk -d .git cat HEAD
 ./cake/.git > cat HEAD
 ref: refs/heads/master
 ./rainbow/.git > cat HEAD
@@ -64,7 +60,7 @@ ref: refs/heads/staging
 ./unicorn/.git > cat HEAD
 ref: refs/heads/develop
 
-$ bulk -d .git -e rainbow -1 cat HEAD
+/Users/smoeller/example $ bulk -d .git -e rainbow -1 cat HEAD
 ./cake/.git > cat HEAD -> ref: refs/heads/master
 ./unicorn/.git > cat HEAD -> ref: refs/heads/develop
 ```
