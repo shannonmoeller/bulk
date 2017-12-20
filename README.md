@@ -16,6 +16,7 @@ chmod +x ~/bin/bulk
 usage: bulk [options] [command]
 
 options:
+  -1    Print results on a single line.
   -d    Subdirectory of each subdirectory in which to run the command.
   -e    Name of subdirectory to exclude.
   -i    Name of subdirectory to include.
@@ -63,9 +64,7 @@ ref: refs/heads/staging
 ./unicorn/.git > cat HEAD
 ref: refs/heads/develop
 
-$ bulk -d .git -e rainbow cat HEAD
-./cake/.git > cat HEAD
-ref: refs/heads/master
-./unicorn/.git > cat HEAD
-ref: refs/heads/develop
+$ bulk -d .git -e rainbow -1 cat HEAD
+./cake/.git > cat HEAD -> ref: refs/heads/master
+./unicorn/.git > cat HEAD -> ref: refs/heads/develop
 ```
