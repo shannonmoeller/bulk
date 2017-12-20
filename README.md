@@ -2,4 +2,29 @@
 
 > Run the same command across several directories.
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/shannonmoeller/bulk/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+```sh
+$ pwd
+/Users/smoeller/example
+
+$ tree -L 1
+
+.
+┣━ rainbow/
+┣━ cake/
+┗━ unicorn/
+
+3 directories, 0 files
+
+$ bulk pwd
+cake/ $ pwd
+/Users/smoeller/example/cake
+rainbow/ $ pwd
+/Users/smoeller/example/rainbow
+unicorn/ $ pwd
+/Users/smoeller/example/unicorn
+
+$ bulk git config -l | grep url
+remote.origin.url=git@github.com:smoeller-example/cake.git
+remote.origin.url=git@github.com:smoeller-example/rainbow.git
+remote.origin.url=git@github.com:smoeller-example/unicorn.git
+```
