@@ -10,7 +10,7 @@ usage: bulk [command]
 
 # Examples
 
-```sh
+```
 $ pwd
 /Users/smoeller/example
 
