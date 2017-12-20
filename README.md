@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-export PATH="$PATH:~/bin/bulk"
+export PATH="$PATH:~/bin"
 curl https://raw.githubusercontent.com/shannonmoeller/bulk/master/bulk.sh > ~/bin/bulk
 chmod +x ~/bin/bulk
 ```
