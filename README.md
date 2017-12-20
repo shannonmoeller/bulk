@@ -37,8 +37,8 @@ $ tree -L 2
 │   ├── .git/
 │   └── readme.md
 └── unicorn/
-│   ├── .git/
-│   └── readme.md
+    ├── .git/
+    └── readme.md
 
 3 directories, 0 files
 
