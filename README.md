@@ -56,4 +56,10 @@ ref: refs/heads/master
 ref: refs/heads/staging
 ./unicorn/.git > cat HEAD
 ref: refs/heads/develop
+
+$ bulk -d .git -e rainbow cat HEAD
+./cake/.git > cat HEAD
+ref: refs/heads/master
+./unicorn/.git > cat HEAD
+ref: refs/heads/develop
 ```
