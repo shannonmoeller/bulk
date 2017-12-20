@@ -27,12 +27,18 @@ options:
 $ pwd
 /Users/smoeller/example
 
-$ tree -L 1
+$ tree -L 2
 
 .
-┣━ rainbow/
-┣━ cake/
-┗━ unicorn/
+├── rainbow/
+│   ├── .git/
+│   └── readme.md
+├── cake/
+│   ├── .git/
+│   └── readme.md
+└── unicorn/
+│   ├── .git/
+│   └── readme.md
 
 3 directories, 0 files
 
