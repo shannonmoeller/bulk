@@ -30,10 +30,10 @@ $ pwd
 $ tree -L 2
 
 .
-├── rainbow/
+├── cake/
 │   ├── .git/
 │   └── readme.md
-├── cake/
+├── rainbow/
 │   ├── .git/
 │   └── readme.md
 └── unicorn/
