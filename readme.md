@@ -1,6 +1,6 @@
 # bulk
 
-> Run the same command across several directories.
+Run the same command across several directories.
 
 ## Install
 
